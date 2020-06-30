@@ -1,24 +1,43 @@
 body{
     padding: 0px;
     margin: 0px;
-    background-color: #1b1b1b;
-    color: white;
+    background-color: #363636;   
     font-family: 'Oswald', sans-serif;
+    background-image: url(../images/blue-universe.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-blend-mode: overlay;
+    
 }
 a{
     text-decoration: none;
     color: white;
 }
+
+.container{
+    /*border: 3px solid white;*/
+    padding: 2%;
+    padding-left: 0px;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1fr;
+    
+    
+}
+
 nav{
-    margin-top: 2%;
-    border: 10px solid green;
+    
+    
+    margin-top: 50%;
+    margin-left: 20%;
+    /*border: 10px solid green;*/
     float: left;
     ul{
-        border: 10px solid white;
+        /*border: 10px solid white;*/
         padding: 0px;
 
         li{
-            border: 5px solid blue;
+            /*border: 5px solid blue;*/
             list-style: none;
             padding: 15px;
             text-align: center;
@@ -28,7 +47,7 @@ nav{
             }
             a{  
                 text-decoration: none;
-                color: #aaaaaa;
+                color: #ffffff;
             }
         }
     }
@@ -41,5 +60,26 @@ nav{
     }
     div > a:hover{
         color: #3017bd;
+    }
+}
+.heading{
+    
+    text-align: center;
+    h1{
+        
+        margin-top: 20%;
+        margin-bottom: 0px;
+        padding-right: 15%;
+        color: #cccccc;
+        font-size: 80px;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    h2{
+        color: #cccccc;
+        font-size: 35px;
+        font-weight: lighter;
+        margin-top: 10px;
+        padding-right: 15%;
     }
 }
