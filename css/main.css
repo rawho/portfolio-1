@@ -1,0 +1,57 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #1b1b1b;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  margin-top: 2%;
+  border: 10px solid green;
+  float: left;
+}
+
+nav ul {
+  border: 10px solid white;
+  padding: 0px;
+}
+
+nav ul li {
+  border: 5px solid blue;
+  list-style: none;
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul li img {
+  width: 100px;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #aaaaaa;
+}
+
+nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav div > a {
+  color: #aaaaaa;
+}
+
+nav div > a:hover {
+  color: #3017bd;
+}
+/*# sourceMappingURL=main.css.map */
