@@ -1,12 +1,10 @@
-.container{
+.my-container{
     /*border: 3px solid white;*/
     padding: 2%;
     padding-left: 0px;
     display: grid;
     grid-template-columns: 1fr 10fr;
-    grid-template-rows: 1fr;
-    
-    
+    grid-template-rows: 1fr;   
 }
 
 nav{
@@ -33,6 +31,10 @@ nav{
                 text-decoration: none;
                 color: #ffffff;
             }
+            a:hover{
+                text-decoration: none;
+                color: #ffffff;
+            }
         }
     }
     div {
@@ -47,6 +49,7 @@ nav{
     }
 }
 .heading{
+    
     text-align: center;
     
     h1{
@@ -60,6 +63,7 @@ nav{
         font-family: sans-serif;
     }
     h2{
+        
         color: #cccccc;
         font-size: 35px;
         font-weight: lighter;
@@ -78,10 +82,12 @@ nav{
 @media (max-width:600px){
     
     body{
-        background-size: auto 100%;
-        background-repeat: repeat-y;
+        
+        background-size: 100%;
+        background-repeat: repeat;
+        
     }
-    .container{
+    .my-container{
 
         display: flex;
         flex-direction: column;
@@ -102,6 +108,7 @@ nav{
         
     }
     .heading{
+        
         margin-top: 50px;
         text-align: center;
         li{

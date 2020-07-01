@@ -15,7 +15,8 @@ a {
   color: white;
 }
 
-.container {
+/* ====================importing css===================*/
+.my-container {
   /*border: 3px solid white;*/
   padding: 2%;
   padding-left: 0px;
@@ -52,6 +53,11 @@ nav ul li img {
 }
 
 nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav ul li a:hover {
   text-decoration: none;
   color: #ffffff;
 }
@@ -104,10 +110,10 @@ nav div > a:hover {
 
 @media (max-width: 600px) {
   body {
-    background-size: auto 100%;
-    background-repeat: repeat-y;
+    background-size: 100%;
+    background-repeat: repeat;
   }
-  .container {
+  .my-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -177,6 +183,74 @@ nav div > a:hover {
   }
   #icon-phone a:hover {
     color: #3017bd;
+  }
+}
+
+.col-md-12 {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 20%;
+}
+
+.col-md-12 img {
+  border-radius: 5%;
+  padding: 2%;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.5), 0 12px 40px 0 rgba(255, 255, 255, 0.4);
+          box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.5), 0 12px 40px 0 rgba(255, 255, 255, 0.4);
+  width: 900px;
+}
+
+.row {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+
+.row img {
+  padding: .5%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(252, 252, 252, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.4);
+          box-shadow: 0 4px 8px 0 rgba(252, 252, 252, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.4);
+}
+
+.row img:hover {
+  padding: 2%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 2%;
+  border: 1px solid orange;
+}
+
+@media (max-width: 600px) {
+  .my-container {
+    min-height: 0px !important;
+  }
+  .col-md-12 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px;
+  }
+  .col-md-12 img {
+    border-radius: 5%;
+    padding: 2%;
+    width: 100%;
+  }
+  .row {
+    padding: 10%;
+    padding-top: 5%;
+  }
+  .row .col-md-4 {
+    padding: 5%;
+  }
+  .row .col-md-4 img {
+    padding: .5%;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(252, 252, 252, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 8px 0 rgba(252, 252, 252, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.4);
+  }
+  .row .col-md-4 img:hover {
+    padding: 2%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
