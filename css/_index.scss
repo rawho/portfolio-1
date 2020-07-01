@@ -1,0 +1,154 @@
+.container{
+    /*border: 3px solid white;*/
+    padding: 2%;
+    padding-left: 0px;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1fr;
+    
+    
+}
+
+nav{
+    
+    
+    margin-top: 50%;
+    margin-left: 20%;
+    /*border: 10px solid green;*/
+    float: left;
+    ul{
+        /*border: 10px solid white;*/
+        padding: 0px;
+
+        li{
+            /*border: 5px solid blue;*/
+            list-style: none;
+            padding: 15px;
+            text-align: center;
+            img{
+                width: 100px;
+                margin: 0;
+            }
+            a{  
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
+    }
+    div {
+        display: flex;
+        justify-content: space-around;
+    }
+    div > a{
+        color: #aaaaaa;
+    }
+    div > a:hover{
+        color: #3017bd;
+    }
+}
+.heading{
+    text-align: center;
+    
+    h1{
+        
+        margin-top: 20%;
+        margin-bottom: 0px;
+        padding-right: 15%;
+        color: #cccccc;
+        font-size: 80px;
+        font-weight: bold;
+        font-family: sans-serif;
+    }
+    h2{
+        color: #cccccc;
+        font-size: 35px;
+        font-weight: lighter;
+        margin-top: 10px;
+        padding-right: 15%;
+    }
+}
+#pro-phone{
+    display: none;
+}
+#icon-phone{
+    display: none;
+}
+
+
+@media (max-width:600px){
+    
+    body{
+        background-size: auto 100%;
+        background-repeat: repeat-y;
+    }
+    .container{
+
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        margin-top: 5px;
+        margin-left: 10px;
+        ul{
+            margin-left: 0px;
+            li{
+                padding: 8px;
+                display: inline;
+                overflow: hidden;
+                
+            }
+
+        }
+        
+    }
+    .heading{
+        margin-top: 50px;
+        text-align: center;
+        li{
+            margin: 0px;
+            padding: 0px;
+            margin-top: 50px;
+            
+            img{
+                width: 200px;
+                
+            }
+        }
+        h1{
+            
+            font: 2.5em sans-serif;
+            margin-top: 0px;
+            padding: 30px 0px 0px 0px;    
+        }
+        h2{
+            padding: 30px 0px 0px 0px;
+            font: 1.5em monospace;
+        }
+        
+    }
+    #pro-lap{
+        display: none;
+    }
+    #pro-phone{
+        display: block;
+    }
+    #works{
+        display: none;
+    }
+    #icon-lap{
+        display: none;
+    }
+    #icon-phone{
+        padding-top: 20px;
+        display: block;
+        display: flex;
+        justify-content: center;
+        a{
+            color: #aaaaaa;
+            padding-left: 20px;
+        }
+        a:hover{
+            color: #3017bd;
+        }
+    }
+}
