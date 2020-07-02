@@ -101,3 +101,18 @@
         border-radius: 10px;
     }
 }
+@media (max-height: 300px){
+    .contact-box{
+    
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        width: 100%;
+        padding: 40px;
+        box-shadow: none;
+        box-sizing: border-box;
+        background: transparent;
+        border-radius: 10px;
+        margin-top: 40%;
+    }
+}
