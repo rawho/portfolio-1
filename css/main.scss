@@ -6,12 +6,14 @@
 body{
     padding: 0px;
     margin: 0px;
+    color: white;
     background-color: #363636;   
     font-family: 'Oswald', sans-serif;
     background-image: url(../images/blue-universe.jpg);
     background-repeat: repeat;
     background-size: 100%;
     background-blend-mode: overlay;
+    overflow-x: hidden;
     
 }
 
@@ -25,3 +27,4 @@ a{
 
 @import 'index';
 @import 'gallery';
+@import 'contact';

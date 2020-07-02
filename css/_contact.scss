@@ -1,0 +1,102 @@
+.contact-box{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 50px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,.4);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(57, 107, 173, 0.4);
+    border-radius: 10px;
+
+    h2{
+        
+        font-family: oswald, arial;
+        text-align: center;
+        color: #dddddd;
+    }
+    
+    .user-box{
+        position: relative;
+        input, textarea{
+            
+            width: 100%;
+            padding: 11px 0;
+            font-size: 16px;
+            color: #dddddd;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid #ffffff;
+            outline: none;
+            background: transparent;
+        }
+        label{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        #textarea{
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 40px 0;
+            font-size: 16px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        
+        input:focus ~ label,
+        input:valid ~ label{
+            top: -20px;
+            left: 0;
+            color: #03e9f4;
+            font-size: 12px;
+        }
+        textarea:focus ~ #textarea,
+        textarea:valid ~ #textarea{
+            top: -60px;
+            left: 0;
+            color: #03e9f4;
+            font-size: 12px;
+        }
+        
+    }
+    a{
+        position: relative;
+        border: 1px solid;
+        display: inline-block;
+        padding: 10px;
+        color: #03e9f4;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 40px;
+        letter-spacing: 4px;
+    }
+    a:hover{
+        background: #03e9f4;
+        color: #ffffff;
+        border-radius: 5px;
+    }
+}
+@media (max-width: 600px){
+    .contact-box{
+    
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        padding: 40px;
+        background-color: rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+}
