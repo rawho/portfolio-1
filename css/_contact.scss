@@ -101,11 +101,11 @@
         border-radius: 10px;
     }
 }
-@media (max-height: 300px){
+@media (max-height: 600px){
     .contact-box{
     
         position: absolute;
-        top: 0%;
+        top: 50%;
         left: 50%;
         width: 100%;
         padding: 40px;
@@ -113,6 +113,6 @@
         box-sizing: border-box;
         background: transparent;
         border-radius: 10px;
-        margin-top: 40%;
+        padding-top: 100%;
     }
 }
