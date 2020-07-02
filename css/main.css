@@ -361,9 +361,11 @@ nav div > a:hover {
     left: 50%;
     width: 100%;
     padding: 40px;
-    background-color: rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: none;
+            box-shadow: none;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    background: transparent;
     border-radius: 10px;
   }
 }
